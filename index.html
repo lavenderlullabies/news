@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Lullabies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d8c3f0, #f3e8ff);
+            color: #4b3f72;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(75,63,114,0.6), rgba(75,63,114,0.6)),
+                        url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(75, 63, 114, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e0b3ff;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(75,63,114,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #4b3f72;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #b57edc;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #9d5bc9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#benefits">Manfaat</a>
+        <a href="#music">Musik</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Lavender Lullabies</h1>
+            <p>Sentuhan lembut aroma lavender dan melodi menenangkan untuk menghadirkan ketenangan, kenyamanan, dan mimpi indah.</p>
+            <a href="#about" class="btn">Jelajahi</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Apa Itu Lavender Lullabies?</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Lavender Lullabies adalah konsep relaksasi yang menggabungkan aroma lavender dengan musik lembut
+            untuk menciptakan suasana tenang sebelum tidur. Kombinasi ini membantu mengurangi stres,
+            meningkatkan kualitas tidur, dan memberikan rasa nyaman secara alami.
+        </p>
+    </section>
+
+    <section id="benefits">
+        <h2>Manfaat Utama</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>🌿 Relaksasi Maksimal</h3>
+                <p>Aroma lavender dikenal membantu menenangkan pikiran dan tubuh setelah hari yang melelahkan.</p>
+            </div>
+            <div class="card">
+                <h3>🎵 Tidur Lebih Nyenyak</h3>
+                <p>Musik lullaby dengan tempo lambat membantu memperlambat detak jantung dan mempersiapkan tubuh untuk tidur.</p>
+            </div>
+            <div class="card">
+                <h3>💜 Mengurangi Stres</h3>
+                <p>Kombinasi aroma dan suara lembut membantu mengurangi kecemasan serta meningkatkan suasana hati.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="music">
+        <h2>Playlist Rekomendasi</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Nikmati koleksi lagu instrumental lembut yang terinspirasi dari ketenangan malam dan keharuman lavender.
+            Cocok untuk meditasi, relaksasi, maupun menemani tidur anak dan dewasa.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <p style="text-align:center;">
+            Ingin tahu lebih lanjut tentang Lavender Lullabies?  
+            Email kami di <strong>hello@lavenderlullabies.com</strong>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lavender Lullabies | Designed with 💜</p>
+    </footer>
+
+</body>
+</html>
